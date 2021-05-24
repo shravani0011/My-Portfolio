@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="max-width" id="mymenu">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <a href="#" class="menu-btn">
+                <i class="fas fa-bars fa-lg"></i> </a>
+        </div>
+    </nav>
+    <!--home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello,my name is</div>
+                <div class="text-2">Shravani Maity</div>
+                <div class="text-3">And I'm a <span>Developer</span></div>
+            </div>
+        </div>
+    </section>
+    <!--About Section-->
+    <div id="body-container">
+        <section class="about" id="about">
+            <div class="About">About</div> <br>
+            <p class="para">I am Associate Front-end Developer, loves to develope and design frontend web pages. I am
+                passionate about learning New technologies and implementing them. I have made various small projects and
+                also designed some
+                static web pages, Currently learning Javascript framework to enhance more my practical skills. </p> <br>
+            <a href="resume1.pdf" download>
+                <button class="resume"><i class="fas fa-download"></i> RESUME</button></a>
+        </section>
+
+        <div class="container" id="container">
+            <h1 class="Exp-Heading">Experience</h1>
+            <div class="container1">
+                <h2 class="h2">Frontend Developer</h2>
+                <div class="heading">at <span>SundayKart </span><a
+                        href="https://play.google.com/store/apps/details?id=com.alt.skart&hl=en_IN&gl=US"
+                        target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h4 class="h4">March 20-March 21</h4>
+                <p class="para1">SundayKart.com is an Ecosystem, helping Small & Medium Businesses(SMB's) to grow
+                    through
+                    online..!!
+                    SundayKart is an Indian e-commerce marketplace which connects both shoppers and local
+                    stores.Shoppers can
+                    order through SundayKart.com and get delivered groceries, restaurant food, sweets and cakes,
+                    services etc
+                    from their favorite stores in their area.
+                </p>
+            </div> <br> <br>
+            <div class="container1">
+                <h2 class="h2">Frontend Developer</h2>
+                <div class="heading">at <span>Ethinicity</span><a
+                        href="https://serene-snyder-afeb4d.netlify.app/index.html" target="_blank"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h4 class="h4">March 21-April 21</h4>
+                <p class="para1">Ethinicity is my self made project which I developed and designed, it is frontend Ecom
+                    webpage
+                    where I kept
+                    ethinic dresses and one can buy it by adding each item 'Add to cart'.It's is just dummy frontend
+                    webpage
+                    made by me without Backened technologies.
+                </p>
+            </div>
+        </div>
+        <section class="Services" id="Services">
+            <div class="text-4">Services</div><br><br>
+            <div class="text-5">
+                <p>CONTENT WRITING <br><br><button class="btn"></button> </p>
+                <p>FRONTEND DEVELOPMENT <br><br><button class="btn1"></button></p>
+            </div>
+            <div class="text-6">
+                <p>WEB DESIGN <br><br><button class="btn2"></button> </p>
+                <p>ILLUSTRATION <br><br><button class="btn"></button></p>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="text-7">Skills</div>
+            <p><mark>HTML</mark> <mark>CSS</mark> <mark>webAPIs</mark>
+                <mark>Javascript</mark> <mark>AJAX</mark> <mark>DOM</mark> <mark>JSON</mark>
+                <mark>ReactJs</mark> <mark>Bootstap</mark>
+            </p>
+        </section>
+        <section class="contacts" id="contacts"><br><br>
+            <div class="contact">Contact Me <br></div><br><span class="text-8">Get in Touch</span>
+        </section><br><br>
+        <div class="contact-section">
+            <div class="contact-wrap">
+                <div class="address"><i class="fas fa-map-marker-alt fa-3x"></i>
+                    <h3><br>Address</h3>
+                    <p>Loknivara H.S, Near vrundavan Colony,<br>katol Road, Nagpur- 440013</p>
+                </div>
+                <div class="phone"><i class="fas fa-phone fa-3x"></i>
+                    <h3><br>Contact Number</h3>
+                    <p>+7709279628</p>
+                </div>
+                <div class="email"><i class="fas fa-paper-plane fa-3x"></i>
+                    <h3><br>Email Address</h3>
+                    <p>shravanimaity0011@gmail.com</p>
+                </div>
+            </div>
+        </div><br><br><br>
+
+        <div class="content">
+            <form action="https://formspree.io/f/xnqlpyge" method="POST">
+                <input type="text" id="fname" name="firstname" placeholder="Your name" required><br>
+                <input type="email" id="lname" name="lastname" placeholder="Your email" required><br>
+                <input type="text" id="fname" name="firstname" placeholder="Subject"><br>
+                <textarea type="text" id="msg" name="lastname" placeholder="Messages"
+                    style="height:100px"></textarea><br>
+                <button type="submit" class="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+<script src="app.js"></script>
+
+</html>

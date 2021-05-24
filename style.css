@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none; 
+    
+}  
+   
+body{
+    margin: 0 auto; 
+    width: 100%; 
+}  
+ 
+#body-container{
+    margin: 0 auto; 
+    width: 100%;
+}
+.max-width{
+    padding: 0 100px; 
+    margin: auto; 
+}
+
+/*nav styling*/ 
+
+nav{
+    position: fixed; 
+    width: 100%;   
+    padding: 15px 0;
+    font-family: 'Ubuntu',sans-serif;   
+   transition: 0.3s ease-in-out;  
+}  
+
+nav.scroll {
+    background-image:linear-gradient(rgb(34, 139, 108),rgb(62, 195, 204)) ;
+  }  
+  nav .sticky{
+    padding: 15px 0;  
+    position: fixed;
+    top: 0;
+    width: 100%;   
+}
+nav .logo a{
+    color: white; 
+    font-size: 35px; 
+    font-weight: 600;
+}  
+nav .logo a span{
+    color: crimson;
+}
+nav .menu li{
+    list-style: none; 
+    display: inline-block;
+} 
+nav .menu li a{
+    color: white; 
+    font-size: 18px; 
+    font-weight: 500; 
+    margin-left: 25px; 
+    transition: color 0.3s ease;
+}  
+nav .menu li a:hover{
+    color: crimson;
+}
+nav .max-width{ 
+    max-width: 1300px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}  
+
+  /*end of nav styling*/
+
+
+/* home section styling */ 
+.home {
+    display: flex; 
+    background: url("banner.png") no-repeat center;   
+    background-size: cover;
+    height: 100vh; 
+    color: white; 
+    min-height: 500px; 
+    font-family: 'Ubuntu',sans-serif;   
+}   
+.home .max-width{
+    margin-left: 600px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+} 
+.home .home-content .text-2{
+    font-size: 75px; 
+    font-weight: 600; 
+    margin-left: 0;
+} 
+.home .home-content .text-3{
+    font-size: 40px; 
+    margin: 5px 0;
+} 
+.home .home-content .text-3 span{
+    color: crimson; 
+    font-weight: 500;  
+}     
+.text-3{
+    width: 0ch;
+    border-right: 1px solid burlywood;
+    animation: type 2s steps(9) infinite alternate; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+@keyframes type {
+    0% {
+        width: 8ch;
+    }
+
+    100% {
+        width: 18ch;
+    }
+}
+.menu-btn{
+    color: white; 
+    cursor: pointer; 
+    display: none;
+}    
+/* responsive media query start */   
+@media (max-width:1200px){
+    nav .max-width{ 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+    }   
+    .home {
+        display: flex; 
+        background: url("banner.png") no-repeat center;   
+        background-size: cover;
+        height: 100vh; 
+        color: white; 
+        min-height: 500px; 
+        font-family: 'Ubuntu',sans-serif;   
+    }    
+    nav {
+        position: fixed;   
+        width: 100%; 
+        padding: 15px 0;
+    }  
+   .home-content{
+    margin: auto -80px;
+   }
+    .home .home-content .text-1{
+        font-size: 20px;
+    } 
+    .home .home-content .text-2{
+        font-size: 65px; 
+        font-weight: 500; 
+        margin-left: 0;
+    } 
+    .home .home-content .text-3{
+        font-size: 30px; 
+        margin: 5px 0;
+    } 
+    .home .home-content .text-3 span{
+        color: crimson; 
+        font-weight: 400;  
+    }  
+    .about{  
+        border-radius: 1rem; 
+        margin: 4rem auto; 
+        width: 80%;
+    } 
+    .Exp-Heading{
+        margin-left: 5px;
+    } 
+    .container{
+        border-radius: 1rem; 
+        margin: 0 auto; 
+    } 
+    .Services{
+        text-align: center; 
+        margin: 0 auto; 
+        width: 80%;
+    }  
+    .skills{
+        margin: 0 auto; 
+        width: 80%;
+    } 
+    .contacts{
+        margin: 5px auto; 
+        width: 80%;
+        text-align: center; 
+        border-radius: 1rem; 
+        height: 7rem;
+    }    
+    .contact-section{
+        margin: 0 auto;
+        width: 80%;
+    } 
+    .contact-wrap{ 
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }  
+    .text-5, .text-6{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+}
+   
+@media (max-width:991px) {
+    .menu-btn{
+        display: block; 
+        z-index: 999;  
+    }   
+    nav .menu li{
+        display: block; 
+    } 
+    nav .menu li a{
+        display: inline-block; 
+        margin: 20px 0; 
+        font-size: 25px;
+    } 
+    nav .menu{
+        position: fixed; 
+        height: 70vh; 
+        width: 100%; 
+        left: 0; 
+        top: 0; 
+        background: #111; 
+        text-align: center; 
+        padding-top: 80px;  
+        display: none;
+    }  
+    .menu.active{
+        display: block;
+    }     
+    .home {
+        display: flex;  
+        background: url("banner.png") no-repeat top;   
+        background-size: 100%;
+        height: auto; 
+        min-height: 500px;  
+        margin-top: 0; 
+    }   
+    nav {
+        position: fixed;   
+        width: 100%; 
+        padding: 15px 0;
+    }  
+   .home-content{
+    margin: auto -80px;
+   }
+    .home .home-content .text-1{
+        font-size: 20px;
+    } 
+    .home .home-content .text-2{
+        font-size: 65px; 
+        font-weight: 500; 
+        margin-left: 0;
+    } 
+    .home .home-content .text-3{
+        font-size: 30px; 
+        margin: 5px 0;
+    } 
+    .home .home-content .text-3 span{
+        color: crimson; 
+        font-weight: 400;  
+    } 
+} 
+
+@media (max-width:768px) {  
+    body{
+        overflow-x: hidden;
+    }
+    .home-content{
+        margin: auto -400px;
+       }
+       .home {
+        display: flex; 
+        background: url("banner.png") no-repeat center;   
+        background-size: cover;
+        height: 100vh; 
+    } 
+    .container1{
+        margin: auto -100px;
+        width: 100%;
+    } 
+    form{
+        width: 40%;
+    } 
+    .skills{
+        margin: 5px 5px 5px 0;
+    }  
+    .home .home-content .text-2{
+        font-size: 55px;
+        font-weight: 500;
+        margin-left: 0;
+    } 
+}   
+@media (max-width:576px){
+    body{
+        overflow-x: hidden;
+    }
+    .home-content{
+        margin: auto -600px;
+       }
+       .home {
+        display: flex; 
+        background: url("banner.png") no-repeat center;   
+        background-size: cover;
+        height: 100vh; 
+    } 
+    .container1{
+        margin: auto -100px;
+        width: 100%;
+    } 
+    form{
+        width: 40%;
+    } 
+    .skills{
+        margin: 5px 5px 5px 0;
+    }  
+    .home .home-content .text-2{
+        font-size: 55px;
+        font-weight: 500;
+        margin-left: 0;
+    } 
+}
+/*
+@media (max-width:624px) { 
+    nav{
+        position: fixed; 
+        width: 100%;   
+        padding: 15px 0;
+    }  
+    .home .max-width{
+        margin-left: 150px; 
+        margin-top: 7rem;
+    }  
+    .home {
+        display: flex;  
+        background: url("banner.png") no-repeat cover ;   
+        background-size: cover;
+        height: auto; 
+        min-height: 500px;  
+        margin-top: 0; 
+    }   
+    .about{
+        max-width: 18rem; 
+        margin-top: 4rem; 
+        text-align: left; 
+        margin-left: 12rem; 
+    } 
+    h1{
+        margin-left: 3rem; 
+        margin-top: 4rem;
+    } 
+    .para1{
+        margin-left: 14rem; 
+        margin-top: 1rem; 
+        width: 40%; 
+        letter-spacing: 1px; 
+    } 
+    .Services{
+        text-align: left;
+    }  
+    .text-6 p{ 
+        padding: 6rem; 
+    } 
+} 
+@media (max-width:578px) {   
+    .home .home-content .text-1{
+        font-size: 27px;
+    } 
+    .home .home-content .text-2{
+        font-size: 35px; 
+        font-weight: 100; 
+        margin-left: 0;
+    }    
+    .home .home-content .text-3{
+        font-size: 25px; 
+        margin: 5px 0;
+    } 
+    .home .home-content .text-3 span{
+        color: crimson; 
+        font-weight: 300;
+    }  
+    nav{
+        position: fixed; 
+        width: 100%;   
+        padding: 15px 0;
+    }  
+    .home {
+        display: flex;  
+        background: url("banner.png") no-repeat top ;   
+        background-size: cover;
+        height: auto; 
+        min-height: 500px;  
+        margin-top: 0; 
+    }   
+    .about{
+        max-width: 15rem; 
+        margin-top: 4rem; 
+        text-align: left; 
+        margin-left: 12rem; 
+    } 
+    h1{
+        margin-left: 3rem;  
+        margin-top: 5rem;
+    }  
+    .para1{
+        margin-left: 14rem; 
+        margin-top: 1rem; 
+        width: 40%; 
+        letter-spacing: 1px; 
+    } 
+    .Services{
+        text-align: left;
+    }  
+    .text-6 p{ 
+        padding: 6rem; 
+    } 
+} 
+@media (max-width:555px){
+    .home .home-content .text-1{
+        font-size: 17px;
+    } 
+    .home .home-content .text-2{
+        font-size: 25px; 
+        font-weight: 150; 
+        margin-left: 0;
+    }    
+    .home .home-content .text-3{
+        font-size: 15px; 
+        margin: 5px 0;
+    } 
+    .home .home-content .text-3 span{
+        color: crimson; 
+        font-weight: 300;
+    }  
+    nav{
+        position: fixed; 
+        width: 100%;   
+        padding: 15px 0;
+    }  
+    h1{
+        margin-left: 3rem; 
+        margin-top: 5rem;
+    }  
+    .para1{
+        margin-left: 12rem; 
+        margin-top: 1rem; 
+        width: 30%; 
+        letter-spacing: 1px; 
+    } 
+    .Services{
+        text-align: left;
+    }  
+    .text-6 p{ 
+        padding: 6rem; 
+    } 
+} 
+@media (max-width:445px){
+    .home {
+        display: flex;  
+        background: url("banner.png") no-repeat top;   
+        background-size: cover;
+        height: auto; 
+    }  
+    .home .max-width{
+        margin-left: 50px;
+    } 
+    .home .max-width{
+        margin-top: 7rem;
+    }  
+    nav{
+        position: fixed; 
+        width: 100%;   
+        padding: 15px 0;
+    }  
+    h1{
+        margin-left: 3rem;  
+        margin-top: 6rem;
+    }  
+    .para1{
+        margin-left: 12rem; 
+        margin-top: 1rem; 
+        width: 30%; 
+        letter-spacing: 1px; 
+    } 
+    .Services{
+        text-align: left;
+    }  
+    .text-6 p{ 
+        padding: 6rem; 
+    } 
+}
+ 
+@media (max-width:393px){
+    .home .max-width{
+        margin-top: 6rem;
+    }  
+    .home .home-content .text-1{
+        font-size: 10px;
+    } 
+    .home .home-content .text-2{
+        font-size: 15px; 
+        font-weight: 100; 
+        margin-left: 0;
+    }    
+    .home .home-content .text-3{
+        font-size: 10px; 
+        margin: 5px 0;
+    } 
+    .home .home-content .text-3 span{
+        color: crimson; 
+        font-weight: 300;
+    }  
+    .home {
+       width: fit-content;
+    } 
+    nav .logo a{
+        font-size: 25px; 
+        font-weight: 400;
+    }  
+    nav{
+        position: fixed; 
+        width: 100%;   
+        padding: 15px 0;
+    }  
+    h1{
+        margin-left: 3rem; 
+        margin-top: 6rem;
+    }  
+    .para1{
+        margin-left: 12rem; 
+        margin-top: 1rem; 
+        width: 30%; 
+        letter-spacing: 1px;  
+        font-size: small;
+    } 
+    .Services{
+        text-align: left;
+    }  
+    .text-6 p{ 
+        padding: 6rem; 
+    } 
+}  
+/* responsive media query end */     
+.container{
+    border-radius: 1rem; 
+    margin: 0 auto;  
+    width: 80%;
+} 
+/* media queries for laptop start */  
+
+/* media queries end */ 
+
+.about{  
+    text-align: center; 
+    margin-left: 17rem; 
+    background-color: lavender; 
+    border-radius: 1rem; 
+    margin: 4rem auto; 
+    width: 80%;
+} 
+.About{
+    margin-top: 2rem; 
+    font-size: 2rem; 
+    font-weight: 300px; 
+    text-decoration: underline;
+}   
+.para{
+    font-family: 'Ubuntu',sans-serif;  
+    text-align: center;  
+    letter-spacing: 2px;
+} 
+.resume{
+    height: 2rem; 
+    width: 6rem;
+    cursor: pointer; 
+    background-color: rgb(0, 217, 255);
+} 
+.resume:hover{
+    background-color: seagreen;
+} 
+h1{
+    margin-left: 5rem; 
+    margin-top: 2rem;
+}  
+.h2{ 
+    margin-top: 1rem; 
+    border-top: 2px solid grey; 
+    width: 60%;  
+    margin-left: 18rem;
+} 
+.h4{
+    margin-left: 18rem; 
+    color: rgb(51, 50, 50); 
+    margin-top: 0.5rem;
+} 
+.para1{
+    margin-left: 18rem; 
+    margin-top: 1rem; 
+    width: 60%; 
+    letter-spacing: 1.5px; 
+    border-bottom: 2px solid grey; 
+}
+.heading{
+    float: right; 
+    width: 30%;
+} 
+.heading span{
+    letter-spacing: 0.5px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold;
+}
+.text-4{
+    margin-top: 4rem; 
+    font-size: 2rem; 
+    font-weight: 300px; 
+    text-decoration: underline;
+} 
+.Services{
+    text-align: center; 
+    margin: 0 auto; 
+    width: 80%;
+} 
+.text-5{
+    display: inline-flex; 
+}  
+.text-5 p{ 
+    padding: 10rem; 
+    padding-top: 2rem;
+}  
+.btn{
+    background-image: linear-gradient(90deg, red 80%, white 20%);
+    width: 20rem; 
+    height: 1rem;
+} 
+.btn1{
+    background-image: linear-gradient(90deg, red 50%, white 50%);
+    width: 20rem; 
+    height: 1rem;
+}
+.text-6{ 
+    display: inline-flex; 
+}  
+.text-6 p{ 
+    padding: 10rem; 
+    padding-top: 0.05px; 
+}    
+
+.btn2{
+    background-image: linear-gradient(90deg, red 60%, white 40%);
+    width: 20rem; 
+    height: 1rem;
+} 
+.text-7{ 
+    font-size: 2rem; 
+    font-weight: 300px; 
+    text-decoration: underline;
+}  
+.skills{
+    text-align: center;  
+    background-color: lavender; 
+    border-radius: 1rem; 
+    height: 7rem; 
+    margin: 0 auto; 
+    width: 80%;
+}   
+
+.skills p{ 
+    margin-top: 2rem;
+    word-spacing: 15px; 
+    font-size: large;
+} 
+.skills p mark{
+    background-color: violet;
+} 
+.contacts{
+    margin: 5px auto; 
+    width: 80%;
+    text-align: center; 
+    border-radius: 1rem; 
+    height: 7rem;
+}   
+.contact{ 
+    font-size: 2rem; 
+    font-weight: 300px; 
+    text-decoration: underline; 
+    letter-spacing: 3px;
+}   
+.text-8{
+    font-size: 1rem; 
+    font-weight: 100px; 
+    color: rgb(65, 64, 64);
+} 
+.contact-section{
+    margin: 0 auto;
+    width: 80%;
+} 
+.contact-wrap{ 
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.address{
+    white-space: nowrap; 
+}  
+
+.contact-section i{
+    color: rgb(4, 4, 59);
+} 
+.content{
+    text-align: center; 
+    margin: 0 auto; 
+} 
+.content input,textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    width: 40rem;
+}  
+.submit{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    width: 40rem; 
+    cursor: pointer; 
+    background-color: rgb(4, 4, 59); 
+    color: white; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    letter-spacing: 3px; 
+    font-weight: bolder;
+}
